@@ -1,6 +1,6 @@
 {
 	"name": "@ersintarhan/pi-lite-compact",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Pi's native compaction, summarized by a model of your choice. Optional early trigger. Falls back to native on any failure.",
 	"keywords": [
 		"pi-package",
