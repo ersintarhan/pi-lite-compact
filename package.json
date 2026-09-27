@@ -1,0 +1,46 @@
+{
+	"name": "@ersintarhan/pi-lite-compact",
+	"version": "0.1.0",
+	"description": "Pi's native compaction, summarized by a model of your choice. Optional early trigger. Falls back to native on any failure.",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"pi",
+		"pi-coding-agent",
+		"compaction"
+	],
+	"author": "Ersin Tarhan <ersintarhan@gmail.com>",
+	"license": "MIT",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ersintarhan/pi-lite-compact.git"
+	},
+	"files": [
+		"index.ts",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"test": "bun test",
+		"check": "bun run typecheck && bun test"
+	},
+	"pi": {
+		"extensions": [
+			"./index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "0.87.1",
+		"@types/bun": "^1.4.0",
+		"typescript": "^7.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"homepage": "https://github.com/ersintarhan/pi-lite-compact#readme"
+}
